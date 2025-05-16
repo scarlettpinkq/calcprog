@@ -2,29 +2,20 @@
     width: 300px;
     margin: 50px auto;
     padding: 20px;
-    border: 1px solid #ffd7d7;
+    background-color: #ffe4ec; /* rosa pastel */
+    border: 1px solid #ffb6c1;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 215, 215, 0.5);
-    background-color: #ffe6e6;
+    box-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
     .calculadora {
         width: 100%;
-        height: 100vh;
         margin: 0;
         padding: 10px;
+        border: none;
         border-radius: 0;
         box-shadow: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
-@media (min-width: 401px) {
-    .calculadora {
-        margin: 50px auto;
     }
 }
 
@@ -36,8 +27,8 @@
     padding: 10px;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 215, 215, 0.5);
-    background-color: #fff0f0;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 128, 0.1); /* azul suave */
 }
 
 .botones {
@@ -52,23 +43,26 @@ button {
     font-size: 18px;
     border: none;
     border-radius: 10px;
+    background-color: #add8e6; /* azul claro */
+    color: #000;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #87cefa; /* azul celeste */
 }
 
 .numero {
-    background-color: #add8e6;
+    background-color: #b0e0e6; /* azul pálido */
 }
 
 .operador {
-    background-color: #87ceeb;
+    background-color: #4682b4; /* azul acero */
     color: #fff;
 }
 
 .borrar {
-    background-color: #ffb6c1;
+    background-color: #4169e1; /* azul real */
     color: #fff;
-}
-
-button:hover {
-    opacity: 0.8;
 }
